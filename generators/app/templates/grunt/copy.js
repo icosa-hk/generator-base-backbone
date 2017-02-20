@@ -43,6 +43,12 @@ module.exports = function(grunt) {
 			dest: 'dist/lib/',
 			expand: true
 		},
+    tether_:{
+      cwd: 'bower_components/tether/dist/js',
+      src: 'tether.js',
+      dest: 'dist/lib/',
+      expand: true
+    },
 		bootstrap_: {
 			cwd: 'bower_components/bootstrap/dist/css',
 			src: 'bootstrap.min.css',

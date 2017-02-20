@@ -6,10 +6,11 @@ require.config({
 		jquery: '../lib/jquery',
 		underscore: '../lib/lodash',
 		backbone: '../lib/backbone',
+    tether: '../lib/tether',
 		bootstrap: '../lib/bootstrap'
 	}
 });
-require(['backbone', 'jquery', 'underscore'], function() {
+require(['backbone', 'jquery', 'underscore', 'tether'], function() {
 	require(['bootstrap'], function() {
 		require(['router'], function(Router) {
 			Router.initialize();
